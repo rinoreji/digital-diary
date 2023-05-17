@@ -6,11 +6,18 @@ tasks:
     command: echo 'start script'
   - name: Restore & Build
     init: |
+      cd src
       dotnet dev-certs https 
       dotnet restore
       dotnet build
-  - name: Run
-    command: dotnet run
+  - name: Run server
+    command: |
+      dotnet run
+
+  - name: Run ui
+    command: |
+      cd client-app
+      npm start
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
   - name: Frontend
