@@ -7,6 +7,8 @@ tasks:
       dotnet dev-certs https 
       dotnet restore
       dotnet build
+      cd client-app
+      npm i
 
   - name: Run server
     command: |
