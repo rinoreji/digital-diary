@@ -15,6 +15,6 @@ app.Use((ctx,next)=>{
 });
 
 app.UseSpa(x=>{
-    x.UseProxyToSpaDevelopmentServer("https://3000-rinoreji-digitaldiary-6owqkgb9h75.ws-us97.gitpod.io");
+    x.UseProxyToSpaDevelopmentServer("https://3000-rinoreji-digitaldiary-92c4de2vtxm.ws-us97.gitpod.io");
 });
 app.Run();
